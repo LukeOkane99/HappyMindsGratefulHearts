@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Minds Grateful Hearts</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-gradient-bg bg-no-repeat bg-fixed text-color-primary tracking-wider"
+  >
+    <header>
+      <nav class="container flex justify-between items-center">
+        <div class="w-96 py-5 hover:scale-110">
+          <a href="#home">
+            <img src="./assets/images/footer-logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div>
+          <ul class="hidden xl:flex items-center space-x-9 text-xl font-bold">
+            <li class="hover:scale-110">
+              <a href="#about" class="hover:text-color-secondary">About</a>
+            </li>
+            <li class="hover:scale-110">
+              <a href="#services" class="hover:text-color-secondary"
+                >Services</a
+              >
+            </li>
+            <li class="hover:scale-110">
+              <a href="#testimonials" class="hover:text-color-secondary"
+                >Testimonials</a
+              >
+            </li>
+            <li class="hover:scale-110">
+              <a href="#contact" class="hover:text-color-secondary"
+                >Contact Me</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
+              >
+                Book Now
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Screen -->
+        <div id="hamburger" class="xl:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars text-4xl"></i>
+        </div>
+
+        <div
+          id="menu"
+          class="hidden bg-color-secondary h-[100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-16 text-xl font-bold">
+            <li class="hover:scale-110">
+              <a id="hlink" href="#about" class="hover:hover:scale-110"
+                >About</a
+              >
+            </li>
+            <li class="hover:scale-110">
+              <a id="hlink" href="#services" class="hover:hover:scale-110"
+                >Services</a
+              >
+            </li>
+            <li class="hover:scale-110">
+              <a id="hlink" href="#testimonials" class="hover:scale-110"
+                >Testimonials</a
+              >
+            </li>
+            <li class="hover:scale-110">
+              <a id="hlink" href="#contact" class="hover:hover:scale-110"
+                >Contact Me</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
+              >
+                Book Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container py-20 mt-5 flex flex-col items-center text-center space-y-14">
+          <img src="./assets/images/profile-img.png" alt="Profile Image" class="w-72 rounded-xl"/>
+          <h1 class="text-7xl font-bold">Holistic Practitioner & Trainee Holistic Psychotherapist</h1>
+          <p class="text-5xl">Mindfulness | Meditation | Breathwork</p>
+          <div class="space-x-5 text-3xl">
+            <button class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary">Book Now</button>
+            <button class="px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary">Let's Connect<button>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container py-20 bg-color-secondary border-2 border-color-primary rounded-2xl mt-5 flex flex-col items-center text-center mb-28">
+          <div class="flex space-x-5">
+            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+            <h1 class="text-6xl font-bold">My Story</h1>
+            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container py-20 bg-color-secondary border-2 border-color-primary rounded-2xl mt-5 flex flex-col items-center text-center mb-28">
+          <div class="flex space-x-5">
+            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+            <h1 class="text-6xl font-bold">What I offer</h1>
+            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container py-20 bg-color-secondary border-2 border-color-primary rounded-2xl mt-5 flex flex-col items-center text-center mb-28">
+          <div class="flex space-x-5">
+            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+            <h1 class="text-6xl font-bold">Get In Touch</h1>
+            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Mobile Menu
+      const hamburger = document.querySelector("#hamburger");
+      const menu = document.querySelector("#menu");
+      const hLink = document.querySelector("#hlink");
+      const faSolid = document.querySelector(".fa-solid");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        faSolid.classList.toggle("fa-xmark");
+      });
+
+      hLink.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          faSolid.classList.toggle("fa-xmark");
+        });
+      });
+    </script>
+  </body>
+</html>
