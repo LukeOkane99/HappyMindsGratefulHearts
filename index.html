@@ -18,7 +18,7 @@
   >
     <header>
       <nav class="container flex justify-between items-center">
-        <div class="w-96 py-5 hover:scale-110">
+        <div class="w-64 py-5 hover:scale-110">
           <a href="#home">
             <img src="./assets/images/footer-logo.png" alt="Logo" />
           </a>
@@ -97,40 +97,101 @@
     <!-- Main body -->
     <main>
       <section id="home">
-        <div class="container py-20 mt-5 flex flex-col items-center text-center space-y-14">
-          <img src="./assets/images/profile-img.png" alt="Profile Image" class="w-72 rounded-xl"/>
-          <h1 class="text-7xl font-bold">Holistic Practitioner & Trainee Holistic Psychotherapist</h1>
-          <p class="text-5xl">Mindfulness | Meditation | Breathwork</p>
-          <div class="space-x-5 text-3xl">
-            <button class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary">Book Now</button>
-            <button class="px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary">Let's Connect<button>
+        <div
+          class="container py-10 md:py-20 md:mt-5 flex flex-col items-center text-center space-y-6 md:space-y-14"
+        >
+          <img
+            src="./assets/images/logo-white.png"
+            alt="Profile Image"
+            class="w-32 md:w-72 rounded-xl"
+          />
+          <h1 class="text-xl lg:text-6xl xl:text-7xl font-bold">
+            Holistic Practitioner & Trainee Holistic Psychotherapist
+          </h1>
+          <p class="text-md lg:text-5xl font-semibold">
+            Mindfulness | Meditation | Breathwork
+          </p>
+          <div class="text-sm space-x-3 md:space-x-5 md:text-3xl">
+            <button
+              class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
+            >
+              Book Now
+            </button>
+            <button
+              class="px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
+            >
+              Let's Connect
+            </button>
           </div>
         </div>
       </section>
       <section id="about">
-        <div class="container py-20 bg-color-secondary border-2 border-color-primary rounded-2xl mt-5 flex flex-col items-center text-center mb-28">
-          <div class="flex space-x-5">
-            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
-            <h1 class="text-6xl font-bold">My Story</h1>
-            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+        <div
+          class="container md:py-20 mt-5 flex flex-col items-center text-center mb-28"
+        >
+          <div
+            class="flex flex-col py-10 space-y-5 items-center bg-color-secondary border-2 border-color-primary rounded-2xl w-80"
+          >
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">My Story</h1>
+            <img
+              src="./assets/images/profile-img.png"
+              alt="Profile picture"
+              class="w-28 rounded-xl"
+            />
+            <p class="text-justify px-6">
+              My name is Amanda, I am a mum of 10 wonderful children. I am a
+              minfullness instructor from Gulladuff, who teaches breathwork.
+            </p>
           </div>
         </div>
       </section>
       <section id="services">
-        <div class="container py-20 bg-color-secondary border-2 border-color-primary rounded-2xl mt-5 flex flex-col items-center text-center mb-28">
-          <div class="flex space-x-5">
-            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
-            <h1 class="text-6xl font-bold">What I offer</h1>
-            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+        <div
+          class="container md:py-20 mt-5 flex flex-col items-center text-center mb-28"
+        >
+          <div
+            class="flex flex-col py-10 px-3 space-y-10 bg-color-secondary border-2 border-color-primary rounded-2xl w-80"
+          >
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">
+              What I offer
+            </h1>
+            <div class="grid grid-cols-2 gap-10">
+              <div class="border-2 border-color-primary rounded-2xl items-center flex flex-col space-y-4 p-3">
+                <h2 class="text-lg font-bold">Aware Tots</h2>
+                <img src="./assets/images/logo-white.png" alt="Class 1" class="w-20" />
+              </div>
+              <div class="border-2 border-color-primary rounded-2xl items-center flex flex-col space-y-4 p-3">
+                <h2 class="text-lg font-bold">Aware Kids</h2>
+                <img src="./assets/images/logo-white.png" alt="Class 2" class="w-20"/>
+              </div>
+              <div class="border-2 border-color-primary rounded-2xl items-center flex flex-col space-y-4 p-3">
+                <h2 class="text-lg font-bold">Aware Teens</h2>
+                <img src="./assets/images/logo-white.png" alt="Class 3" class="w-20"/>
+              </div>
+              <div class="border-2 border-color-primary rounded-2xl items-center flex flex-col space-y-4 p-3">
+                <h2 class="text-lg font-bold">Aware Adults</h2>
+                <img src="./assets/images/logo-white.png" alt="Class 4" class="w-20"/>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section id="contact">
-        <div class="container py-20 bg-color-secondary border-2 border-color-primary rounded-2xl mt-5 flex flex-col items-center text-center mb-28">
-          <div class="flex space-x-5">
-            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
-            <h1 class="text-6xl font-bold">Get In Touch</h1>
-            <img src="./assets/images/logo-white.png" alt="White Logo" class="w-24"/>
+        <div
+          class="container md:py-20 mt-5 flex flex-col items-center text-center mb-28"
+        >
+          <div
+            class="flex flex-col py-10 space-y-5 bg-color-secondary border-2 border-color-primary rounded-2xl w-80"
+          >
+            <h1 class="text-xl md:text-4xl lg:text-6xl font-bold">
+              Get In Touch
+            </h1>
+            <div class="flex flex-col space-y-5 items-center">
+              <input placeholder="Enter Your Name" class="w-10/12 p-2">
+              <input placeholder="Enter Your Email" class="w-10/12 p-2">
+              <textarea placeholder="Write Your Message" class="w-10/12 p-2"></textarea>
+              <button class="border-2 border-color-primary rounded-xl p-2 font-medium">Submit</button>
+            </div>
           </div>
         </div>
       </section>
