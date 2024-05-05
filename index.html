@@ -16,6 +16,7 @@
   <body
     class="bg-gradient-bg bg-no-repeat bg-fixed text-color-primary tracking-wider"
   >
+    <!-- Navbar -->
     <header class="sticky top-0 z-50">
       <nav class="container flex justify-between items-center">
         <div class="w-64 py-5 hover:scale-110">
@@ -26,28 +27,26 @@
         <div>
           <ul class="hidden xl:flex items-center space-x-9 text-xl font-bold">
             <li class="hover:scale-110">
-              <a href="#about" class="hover:text-color-secondary">About</a>
+              <a href="#about" class="hover:underline">About</a>
             </li>
             <li class="hover:scale-110">
-              <a href="#services" class="hover:text-color-secondary"
-                >Services</a
-              >
+              <a href="#services" class="hover:underline">Services</a>
             </li>
             <li class="hover:scale-110">
-              <a href="#testimonials" class="hover:text-color-secondary"
-                >Testimonials</a
-              >
+              <a href="#reviews" class="hover:underline">Reviews</a>
             </li>
             <li class="hover:scale-110">
-              <a href="#contact" class="hover:text-color-secondary"
-                >Contact Me</a
-              >
+              <a href="#contact" class="hover:underline">Contact Me</a>
             </li>
             <li>
               <button
                 class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
               >
-                Book Now
+                <a
+                  href="https://bookwhen.com/happymindsgratefulhearts"
+                  target="_blank"
+                  >Book Now</a
+                >
               </button>
             </li>
           </ul>
@@ -74,9 +73,7 @@
               >
             </li>
             <li class="hover:scale-110">
-              <a id="hLink" href="#testimonials" class="hover:scale-110"
-                >Testimonials</a
-              >
+              <a id="hLink" href="#reviews" class="hover:scale-110">Reviews</a>
             </li>
             <li class="hover:scale-110">
               <a id="hLink" href="#contact" class="hover:hover:scale-110"
@@ -87,13 +84,18 @@
               <button
                 class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
               >
-                Book Now
+                <a
+                  href="https://bookwhen.com/happymindsgratefulhearts"
+                  target="_blank"
+                  >Book Now</a
+                >
               </button>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
     <!-- Main body -->
     <main>
       <section id="home">
@@ -105,9 +107,7 @@
             alt="Profile Image"
             class="w-32 md:w-60 rounded-xl"
           />
-          <h1
-            class="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
-          >
+          <h1 class="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
             Holistic Practitioner & Trainee Holistic Psychotherapist
           </h1>
           <p class="text-md sm:text-2xl md:text-4xl font-semibold">
@@ -117,7 +117,11 @@
             <button
               class="bg-color-secondary px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
             >
-              Book Now
+              <a
+                href="https://bookwhen.com/happymindsgratefulhearts"
+                target="_blank"
+                >Book Now</a
+              >
             </button>
             <button
               class="px-6 py-3 rounded-2xl font-bold hover:scale-105 border-2 border-color-primary"
@@ -137,12 +141,12 @@
             <img
               src="./assets/images/My-Story.png"
               alt="My Story"
-              class="w-44 rounded-xl"
+              class="w-44 md:w-64 rounded-xl"
             />
             <img
               src="./assets/images/profile-img.png"
               alt="Profile picture"
-              class="w-32 "
+              class="w-32 md:w-56"
             />
             <p class="text-left px-6 font-medium">
               My name is Amanda, I am a mum of 10 wonderful children. I am a
@@ -186,6 +190,71 @@
           </div>
         </div>
       </section>
+      <section id="reviews">
+        <div
+          class="container md:py-20 mt-5 flex flex-col items-center text-center mb-28"
+        >
+          <div
+            class="flex flex-col py-10 space-y-5 bg-color-secondary border-2 border-color-primary rounded-2xl w-80 md:w-9/12 items-center"
+          >
+            <img
+              src="./assets/images/Reviews.png"
+              alt="Reviews"
+              class="w-44 md:w-64 rounded-xl"
+            />
+            <div class="grid gap-6 lg:grid-cols-2 md:gap-20 md:mx-8">
+              <div class="space-y-3 p-3">
+                <i
+                  class="fa-solid fa-quote-left md:text-3xl text-color-third"
+                ></i>
+                <p class="md:text-2xl font-semibold">
+                  "Working with Amanda has been nothing short of amazing. She is
+                  an underatated professional, who is absolutely superb at what
+                  she does. After coming back from Splash and Amanda's
+                  breathwork class, I felt completely relaxed."
+                </p>
+                <p class="md:text-xl">- Person 1</p>
+              </div>
+              <div class="space-y-3 p-3">
+                <i
+                  class="fa-solid fa-quote-left md:text-3xl text-color-third"
+                ></i>
+                <p class="md:text-2xl font-semibold">
+                  "Working with Amanda has been nothing short of amazing. She is
+                  an underatated professional, who is absolutely superb at what
+                  she does. After coming back from Splash and Amanda's
+                  breathwork class, I felt completely relaxed."
+                </p>
+                <p class="md:text-xl">- Person 2</p>
+              </div>
+              <div class="space-y-3 p-3">
+                <i
+                  class="fa-solid fa-quote-left md:text-3xl text-color-third"
+                ></i>
+                <p class="md:text-2xl font-semibold">
+                  "Working with Amanda has been nothing short of amazing. She is
+                  an underatated professional, who is absolutely superb at what
+                  she does. After coming back from Splash and Amanda's
+                  breathwork class, I felt completely relaxed."
+                </p>
+                <p class="md:text-xl">- Person 3</p>
+              </div>
+              <div class="space-y-3 p-3">
+                <i
+                  class="fa-solid fa-quote-left md:text-3xl text-color-third"
+                ></i>
+                <p class="md:text-2xl font-semibold">
+                  "Working with Amanda has been nothing short of amazing. She is
+                  an underatated professional, who is absolutely superb at what
+                  she does. After coming back from Splash and Amanda's
+                  breathwork class, I felt completely relaxed."
+                </p>
+                <p class="md:text-xl">- Person 4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="contact">
         <div
           class="container md:py-20 mt-5 flex flex-col items-center text-center mb-28"
@@ -206,7 +275,9 @@
                 <p class="text-sm">happymindsgratefulhearts@gmail.com</p>
               </div>
               <div class="space-y-2">
-                <i class="fa-solid fa-location-dot text-3xl text-color-third"></i>
+                <i
+                  class="fa-solid fa-location-dot text-3xl text-color-third"
+                ></i>
                 <p class="text-sm px-2">
                   Well-being Hub NI, The Station House, 16a Derganagh Road, BT45
                   8PS
@@ -214,8 +285,14 @@
               </div>
             </div>
             <div class="flex flex-col space-y-5 items-center">
-              <input placeholder="Enter Your Name" class="w-10/12 p-2 text-black" />
-              <input placeholder="Enter Your Email" class="w-10/12 p-2 text-black" />
+              <input
+                placeholder="Enter Your Name"
+                class="w-10/12 p-2 text-black"
+              />
+              <input
+                placeholder="Enter Your Email"
+                class="w-10/12 p-2 text-black"
+              />
               <textarea
                 placeholder="Write Your Message"
                 class="w-10/12 h-28 p-2 text-black"
@@ -232,18 +309,17 @@
     </main>
 
     <script>
-
       // Making navbar sticky
       const navbar = document.querySelector("header");
       window.onscroll = () => {
         if (window.scrollY > 70) {
-          navbar.classList.add('bg-color-secondary');
-          navbar.classList.add('border-b');
+          navbar.classList.add("bg-color-secondary");
+          navbar.classList.add("border-b");
         } else {
-          navbar.classList.remove('bg-color-secondary');
-          navbar.classList.remove('border-b');
+          navbar.classList.remove("bg-color-secondary");
+          navbar.classList.remove("border-b");
         }
-      }
+      };
 
       // Mobile Menu
       const hamburger = document.querySelector("#hamburger");
@@ -256,7 +332,7 @@
         faSolid.classList.toggle("fa-xmark");
       });
 
-      hLink.forEach(link => {
+      hLink.forEach((link) => {
         link.addEventListener("click", () => {
           menu.classList.toggle("hidden");
           faSolid.classList.toggle("fa-xmark");
