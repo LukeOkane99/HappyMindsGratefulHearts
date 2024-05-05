@@ -16,7 +16,7 @@
   <body
     class="bg-gradient-bg bg-no-repeat bg-fixed text-color-primary tracking-wider"
   >
-    <header>
+    <header class="sticky top-0 z-50">
       <nav class="container flex justify-between items-center">
         <div class="w-64 py-5 hover:scale-110">
           <a href="#home">
@@ -64,22 +64,22 @@
         >
           <ul class="h-full grid place-items-center py-16 text-xl font-bold">
             <li class="hover:scale-110">
-              <a id="hlink" href="#about" class="hover:hover:scale-110"
+              <a id="hLink" href="#about" class="hover:hover:scale-110"
                 >About</a
               >
             </li>
             <li class="hover:scale-110">
-              <a id="hlink" href="#services" class="hover:hover:scale-110"
+              <a id="hLink" href="#services" class="hover:hover:scale-110"
                 >Services</a
               >
             </li>
             <li class="hover:scale-110">
-              <a id="hlink" href="#testimonials" class="hover:scale-110"
+              <a id="hLink" href="#testimonials" class="hover:scale-110"
                 >Testimonials</a
               >
             </li>
             <li class="hover:scale-110">
-              <a id="hlink" href="#contact" class="hover:hover:scale-110"
+              <a id="hLink" href="#contact" class="hover:hover:scale-110"
                 >Contact Me</a
               >
             </li>
@@ -103,14 +103,14 @@
           <img
             src="./assets/images/logo-white.png"
             alt="Profile Image"
-            class="w-32 md:w-72 rounded-xl"
+            class="w-32 md:w-60 rounded-xl"
           />
           <h1
-            class="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold"
+            class="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
           >
             Holistic Practitioner & Trainee Holistic Psychotherapist
           </h1>
-          <p class="text-md sm:text-2xl md:text-4xl lg:text-5xl font-semibold">
+          <p class="text-md sm:text-2xl md:text-4xl font-semibold">
             Mindfulness | Meditation | Breathwork
           </p>
           <div class="text-sm space-x-3 md:space-x-5 md:text-3xl">
@@ -132,7 +132,7 @@
           class="container md:py-20 mt-10 flex flex-col items-center text-center mb-20"
         >
           <div
-            class="flex flex-col py-5 space-y-5 items-center bg-color-secondary border-2 border-color-primary rounded-2xl w-80"
+            class="flex flex-col py-5 space-y-5 items-center bg-color-secondary border-2 border-color-primary rounded-2xl w-80 md:w-9/12"
           >
             <img
               src="./assets/images/My-Story.png"
@@ -156,7 +156,7 @@
           class="container md:py-20 mt-5 flex flex-col items-center text-center mb-20"
         >
           <div
-            class="flex flex-col py-10 px-3 space-y-10 bg-color-secondary border-2 border-color-primary rounded-2xl w-80"
+            class="flex flex-col py-10 px-3 space-y-10 bg-color-secondary border-2 border-color-primary rounded-2xl w-80 md:w-9/12"
           >
             <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">
               What I offer
@@ -191,7 +191,7 @@
           class="container md:py-20 mt-5 flex flex-col items-center text-center mb-28"
         >
           <div
-            class="flex flex-col py-10 space-y-5 bg-color-secondary border-2 border-color-primary rounded-2xl w-80"
+            class="flex flex-col py-10 space-y-5 bg-color-secondary border-2 border-color-primary rounded-2xl w-80 md:w-9/12"
           >
             <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">
               Get In Touch
@@ -232,10 +232,23 @@
     </main>
 
     <script>
+
+      // Making navbar sticky
+      const navbar = document.querySelector("header");
+      window.onscroll = () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add('bg-color-secondary');
+          navbar.classList.add('border-b');
+        } else {
+          navbar.classList.remove('bg-color-secondary');
+          navbar.classList.remove('border-b');
+        }
+      }
+
       // Mobile Menu
       const hamburger = document.querySelector("#hamburger");
       const menu = document.querySelector("#menu");
-      const hLink = document.querySelector("#hlink");
+      const hLink = document.querySelectorAll("#hLink");
       const faSolid = document.querySelector(".fa-solid");
 
       hamburger.addEventListener("click", () => {
@@ -243,7 +256,7 @@
         faSolid.classList.toggle("fa-xmark");
       });
 
-      hLink.forEach((link) => {
+      hLink.forEach(link => {
         link.addEventListener("click", () => {
           menu.classList.toggle("hidden");
           faSolid.classList.toggle("fa-xmark");
